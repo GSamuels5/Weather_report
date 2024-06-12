@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Prediction App</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background: url('/stock-photo-sun-in-a-blue-cloudy-sky.png') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.app-container {
+    text-align: center;
+    color: #fff;
+}
+
+.header {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+}
+
+.search-bar {
+    margin: 10px 0;
+}
+
+.search-bar input {
+    padding: 10px;
+    width: 200px;
+    margin-right: 10px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+}
+
+.current-weather {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.hourly-forecast, .daily-forecast, .weather-alerts {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.hourly, .daily {
+    display: flex;
+    justify-content: space-around;
+}
+
+.hour, .day {
+    text-align: center;
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <header class="header">
+            <h1>Weather Prediction App</h1>
+            <div class="search-bar">
+                <form method="post">
+                    <input type="text" name="city" placeholder="Enter City Name" required>
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+            <!-- Error message will be displayed here if there's any -->
+            <!-- <div class="error">City not found. Please try again.</div> -->
+        </header>
+
+        <!-- Current weather section -->
+        <section class="current-weather">
+            <div class="location">Cape Town, South Africa</div>
+            <div class="temperature">25°C</div>
+            <div class="weather">Sunny</div>
+        </section>
+
+        <!-- Hourly forecast section -->
+        <section class="hourly-forecast">
+            <h2>Hourly Forecast</h2>
+            <div class="hourly">
+                <div class="hour">12 PM <br> 25°C <br> ☀️</div>
+                <div class="hour">1 PM <br> 26°C <br> ☀️</div>
+                <div class="hour">2 PM <br> 27°C <br> ☀️</div>
+                <div class="hour">3 PM <br> 28°C <br> ☀️</div>
+                <div class="hour">4 PM <br> 29°C <br> ☀️</div>
+                <div class="hour">5 PM <br> 30°C <br> ☀️</div>
+                <div class="hour">6 PM <br> 31°C <br> ☀️</div>
+                <div class="hour">7 PM <br> 32°C <br> ☀️</div>
+            </div>
+        </section>
+
+        <!-- Daily forecast section -->
+        <section class="daily-forecast">
+            <h2>Daily Forecast</h2>
+            <div class="daily">
+                <div class="day">MON <br> 25°C <br> ☀️</div>
+                <div class="day">TUES <br> 26°C <br> ☀️</div>
+                <div class="day">WED <br> 27°C <br> ☀️</div>
+                <div class="day">THURS <br> 28°C <br> ☀️</div>
+                <div class="day">FRI <br> 29°C <br> ☀️</div>
+                <div class="day">SAT <br> 30°C <br> ☀️</div>
+                <div class="day">SUN <br> 31°C <br> ☀️</div>
+            </div>
+        </section>
+
+        <!-- Weather alerts section -->
+        <section class="weather-alerts">
+            <h2>Weather Alerts</h2>
+            <div class="alert">No Alerts for this Location.</div>
+        </section>
+
+        <footer class="footer">
+            <p>© Weather Prediction App</p>
+        </footer>
+    </div>
+</body>
+</html>
