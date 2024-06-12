@@ -8,6 +8,8 @@ app = Flask(__name__)
 API_KEY = "116a7580f2e9da0fe79698ccd7246265"
 BASE_URL = "https://api.openweathermap.org/data/2.5/"
 
+# https://api.openweathermap.org/data/2.5/weather?q=Cape%20Town&appid=116a7580f2e9da0fe79698ccd7246265
+
 api_manifest = {
     "endpoints": {
         "weather": {
