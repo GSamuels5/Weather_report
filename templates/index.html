@@ -3,26 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="10">
+    <meta http-equiv="refresh" content="3">
     <title>Weather Report</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <body>
         <div class="vh-100 d-flex flex-column">
-            <div class="px-4 py-4 d-flex">
-                <div class="d-flex">
+            <div class="px-4 pt-4 d-flex flex-column">
+                <div class="d-flex col-2">
                     <input class="form-control border-primary-subtle rounded-start-4 p-2 mx-1 rounded-end-0" type="text" placeholder="search city">
                     <button class="btn btn-primary p-2 rounded-start-0 rounded-end">search</button>
                 </div>
+				<div class="bg-dange p-0">
+					<div class="d-flex bg-dange p-2">
+						<div class="bg-dark p-4 rounded"></div>
+					</div>
+				</div>
             </div>
             <div class="flex-fill d-flex">
-                <div class="col-4 p-4 d-flex">
-                    <div class="bg-danger rounded-2 p-3 flex-fill shadow text-white">display</div>
+                <div class="col-6 p-3 d-flex flex-column">
+                    <div class="row row-cols-4 border border-2 border-primary-subtle rounded-2 p-0 text-white">
+						<div class="col p-1">
+							<div class="bg-danger p-2 text-center rounded">Cape Town</div>
+						</div>
+						<div class="col p-1">
+							<div class="bg-danger p-2 text-center rounded">Cape Town</div>
+						</div>
+						<div class="col p-1">
+							<div class="bg-danger p-2 text-center rounded">Cape Town</div>
+						</div>
+						<div class="col p-1">
+							<div class="bg-danger p-2 text-center rounded">Cape Town</div>
+						</div>
+						<div class="col p-1">
+							<div class="bg-danger p-2 text-center rounded">Cape Town</div>
+						</div>
+						<div class="col p-1">
+							<div class="bg-danger p-2 text-center rounded">Cape Town</div>
+						</div>
+						<div class="col p-1">
+							<div class="bg-danger p-2 text-center rounded">Cape Town</div>
+						</div>
+					</div>
                 </div>
-                <div class="col-4 p-4 d-flex">
-                    <div class="bg-danger rounded-2 p-3 flex-fill shadow text-white">display</div>
-                </div>
-                <div class="col-4 p-4 d-flex">
-                    <div class="bg-danger rounded-2 p-3 flex-fill shadow text-white">display</div>
+                <div class="col-6 p-3 d-flex">
+                    <div class="bg-danger rounded-2 p-3 flex-fill text-white position-relative">
+						display
+					</div>
                 </div>
             </div>
         </div>
