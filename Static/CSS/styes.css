@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background: url('/Static/stock-photo-sun-in-a-blue-cloudy-sky.png') no-repeat center center fixed;
+    background: url('https://raw.githubusercontent.com/GSamuels5/Weather_report/darren/Static/stock-photo-sun-in-a-blue-cloudy-sky.png') no-repeat center center fixed;
     background-size: cover;
     color: #333;
     display: flex;
