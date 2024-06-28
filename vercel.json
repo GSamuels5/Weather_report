@@ -1,0 +1,9 @@
+{
+    "version": 2,
+    "builds": [
+        {"src" : "code_clallenge.py", "use": "@vercel/python"}
+    ],
+    "routes": [
+        {"src": "/(.*)", "dest": "code_clallenge.py"}
+    ]
+}
